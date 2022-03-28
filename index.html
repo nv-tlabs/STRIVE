@@ -116,7 +116,7 @@
             </div>
 
             <div class="project-conference">
-                arXiv 2021
+                Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>) 2022
             </div>
 
             <div class="project-icons">
@@ -148,7 +148,7 @@
                     automatically generate challenging scenarios that cause a given planner to produce undesirable 
                     behavior, like collisions.</b> To maintain scenario plausibility, the key idea is to <b>leverage a 
                     learned model of traffic motion</b> in the form of a graph-based conditional VAE. Scenario generation 
-                    is formulated as an <b>optimization in the latent space</b> of this traffic model, effected by perturbing 
+                    is formulated as an <b>optimization in the latent space</b> of this traffic model, perturbing 
                     an initial real-world scene to produce trajectories that collide with a given planner. A subsequent 
                     optimization is used to find a "solution" to the scenario, ensuring it is useful to improve the given 
                     planner. Further analysis clusters generated scenarios based on collision type. We attack two planners 
@@ -700,6 +700,130 @@
                 </p>
             </div>
 
+            <div class="section-title">Second-order Effects</div> 
+            <div class="content">
+                <p>
+                    One interesting ability of adversarial optimization is to produce scenarios that cause collisions with the planner using 
+                    so-called ``second-order effects", where multiple adversaries act in conjunction to cause a collision. 
+                    In the specific examples below, the planner is obstructed by one adversary, causing the planner to slam on its brakes and get hit by a different vehicle.
+                    </br></br>
+                    <table align=center width=600px>
+                        <tr>
+                            <center>
+                                <td colspan='2'>
+                                    <video width="300" height="300" controls muted autoplay loop>
+                                        <source src="./videos/second_order_effects/scene_0313_007/viz_init_vid_000.mp4" type="video/mp4">
+                                    </video>
+                                </td>                
+                                <td colspan='2'>
+                                    <video width="300" height="300" controls muted autoplay loop>
+                                        <source src="./videos/second_order_effects/scene_0313_007/viz_adv_vid_000.mp4" type="video/mp4">
+                                    </video>
+                                </td>              
+                            </center>
+                        </tr>          
+                        <tr>
+                            <center>
+                                <td colspan='2'>
+                                    <center>
+                                        Original replay
+                                    </center>
+                                </td>
+                                <td colspan='2'>
+                                    <center>
+                                        STRIVE attack              
+                                    </center>
+                                </td>
+                            </center>
+                        </tr>
+                        <!-- <tr>
+                            <center>
+                                <td colspan='2'>
+                                    <video width="300" height="300" controls muted autoplay loop>
+                                        <source src="./videos/second_order_effects/scene_0678_003/viz_init_vid_000.mp4" type="video/mp4">
+                                    </video>
+                                </td>                
+                                <td colspan='2'>
+                                    <video width="300" height="300" controls muted autoplay loop>
+                                        <source src="./videos/second_order_effects/scene_0678_003/viz_adv_vid_000.mp4" type="video/mp4">
+                                    </video>
+                                </td>              
+                            </center>
+                        </tr>          
+                        <tr>
+                            <center>
+                                <td colspan='2'>
+                                    <center>
+                                        Original replay
+                                    </center>
+                                </td>
+                                <td colspan='2'>
+                                    <center>
+                                        STRIVE attack              
+                                    </center>
+                                </td>
+                            </center>
+                        </tr> -->
+                        <tr>
+                            <center>
+                                <td colspan='2'>
+                                    <video width="300" height="300" controls muted autoplay loop>
+                                        <source src="./videos/second_order_effects/scene_1146_001/viz_init_vid_000.mp4" type="video/mp4">
+                                    </video>
+                                </td>                
+                                <td colspan='2'>
+                                    <video width="300" height="300" controls muted autoplay loop>
+                                        <source src="./videos/second_order_effects/scene_1146_001/viz_adv_vid_000.mp4" type="video/mp4">
+                                    </video>
+                                </td>              
+                            </center>
+                        </tr>          
+                        <tr>
+                            <center>
+                                <td colspan='2'>
+                                    <center>
+                                        Original replay
+                                    </center>
+                                </td>
+                                <td colspan='2'>
+                                    <center>
+                                        STRIVE attack              
+                                    </center>
+                                </td>
+                            </center>
+                        </tr>
+                        <tr>
+                            <center>
+                                <td colspan='2'>
+                                    <video width="300" height="300" controls muted autoplay loop>
+                                        <source src="./videos/second_order_effects/scene_1197_001/viz_init_vid_000.mp4" type="video/mp4">
+                                    </video>
+                                </td>                
+                                <td colspan='2'>
+                                    <video width="300" height="300" controls muted autoplay loop>
+                                        <source src="./videos/second_order_effects/scene_1197_001/viz_adv_vid_000.mp4" type="video/mp4">
+                                    </video>
+                                </td>              
+                            </center>
+                        </tr>          
+                        <tr>
+                            <center>
+                                <td colspan='2'>
+                                    <center>
+                                        Original replay
+                                    </center>
+                                </td>
+                                <td colspan='2'>
+                                    <center>
+                                        STRIVE attack              
+                                    </center>
+                                </td>
+                            </center>
+                        </tr>
+                    </table>
+                </p>
+            </div>     
+            
             <div class="section-title">Pedestrian and Cyclist Adversaries</div>
             <div class="content">
                 <p>
@@ -762,14 +886,15 @@
                 </p>
             </div>
 
+
             <div class="section-title">Citation</div>
             <div class="section bibtex">
             <pre>
-@inproceedings{rempe2021strive,
+@inproceedings{rempe2022strive,
     author={Rempe, Davis and Philion, Jonah and Guibas, Leonidas J. and Fidler, Sanja and Litany, Or},
     title={Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior},
-    booktitle={arXiv:2112.05077},
-    year={2021}
+    booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2022}
 }            </pre>
             </div>
             <br>
