@@ -1,6 +1,6 @@
 # Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior (CVPR 2022)
 ### Davis Rempe, Jonah Philion, Leonidas Guibas, Sanja Fidler, Or Litany
-#### [[Project Page](https://nv-tlabs.github.io/STRIVE/)]
+#### [[Project Page](https://nv-tlabs.github.io/STRIVE/)] [[Code](https://github.com/nv-tlabs/STRIVE)]
 
 ![STRIVE Teaser](strive_teaser.png)
 
