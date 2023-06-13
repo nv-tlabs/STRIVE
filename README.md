@@ -1,6 +1,6 @@
 # Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior (CVPR 2022)
 ### Davis Rempe, Jonah Philion, Leonidas Guibas, Sanja Fidler, Or Litany
-#### [[Project Page](https://nv-tlabs.github.io/STRIVE/)] [[Code](https://github.com/nv-tlabs/STRIVE)]
+#### [[Project Page](https://nv-tlabs.github.io/STRIVE/)] [[Blog Post](https://developer.nvidia.com/blog/generating-ai-based-accident-scenarios-for-autonomous-vehicles/?ncid=so-link-452504-vt03#cid=av16_so-link_en-us)] [[NVIDIA DRIVE Labs](https://www.youtube.com/watch?v=BXf9xTR6hJo)]
 
 ![STRIVE Teaser](strive_teaser.png)
 
@@ -113,6 +113,11 @@ Generated scenarios can be clustered based on collision properties to analyze th
 python src/cluster_scenarios.py --scenario_dirs ./out/adv_gen_rule_based_out/scenario_results/adv_sol_success ./out/adv_gen_rule_based_out/scenario_results/sol_failed --out ./out/rule_based_clustering
 ```
 In this example, all scenarios that caused a collision (even those where a solution was not found) are used for the clustering. This outputs a file called `cluster.pkl` that is fed to the evaluation scripts described above. You can also add the `--viz` flag to visualize the collisions in each cluster. You will also need to define your own `cluster_labels.txt` file in order to run the evaluations above. Please see [our provided clustering](./data/clustering/cluster_labels.txt) for an example; note the labels must be in the corresponding order to the cluster indices.
+
+## Find Out More
+
+For more information and results, check out our [project page](https://nv-tlabs.github.io/STRIVE/). 
+STRIVE is also featured on an episode of [NVIDIA Drive Labs](https://www.youtube.com/watch?v=BXf9xTR6hJo)!
 
 ## Citation
 If you found this code or paper useful, please consider citing:
