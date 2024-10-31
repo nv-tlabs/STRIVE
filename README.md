@@ -28,9 +28,9 @@ data/nuscenes
 The code also supports the mini dataset in the exact same structure.
 
 ## Additional Downloads
-Weights for the pre-trained traffic models can be [downloaded here](https://drive.google.com/drive/folders/1n3j7gT_SA9RoaLosz7z8ngaQhlfV6oRz?usp=sharing) and should be placed in a directory called `model_ckpt` to be used by the config files described below. We provide models trained on _car_ and _trucks_ only (as used in the main paper) and one trained on all categories (discussed in supplementary document).
+Weights for the pre-trained traffic models can be [downloaded here](https://www.dropbox.com/scl/fo/ajge853wnwgtrrxysuwim/APUPJ8UTs8mxGGNp0SHN0aw?rlkey=zfzkycbf7h1dx0a6mcj4etl1e&st=pk1tis1d&dl=0) and should be placed in a directory called `model_ckpt` to be used by the config files described below. We provide models trained on _car_ and _trucks_ only (as used in the main paper) and one trained on all categories (discussed in supplementary document).
 
-We also provide the generated scenarios from Section 5.1/5.2 of the paper where both adversarial and solution optimizations succeeded. You can [download them here](https://drive.google.com/drive/folders/10PF_f_5UAWNZlOmHPTi8oiu2qV6hcZCN?usp=sharing) and place them in `data/strive_scenarios`. To use these scenarios in the analyses described below, you will need to update the configs to point to these scenarios accordingly.
+We also provide the generated scenarios from Section 5.1/5.2 of the paper where both adversarial and solution optimizations succeeded. You can [download them here](https://www.dropbox.com/scl/fo/djjdbr4ykiwogvfdpuz0c/APryskA5DXsnRqWwvs6_-tM?rlkey=p5kvk9ns1bk6ejjnrjg7s3ndo&st=nueo2y07&dl=0) and place them in `data/strive_scenarios`. To use these scenarios in the analyses described below, you will need to update the configs to point to these scenarios accordingly.
 
 Note these models and scenarios were derived from the nuScenes dataset and are thus separately licensed under CC-BY-NC-SA-4.0.
 
