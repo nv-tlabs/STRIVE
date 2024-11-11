@@ -1,1 +1,1 @@
-[Download](https://drive.google.com/drive/folders/1n3j7gT_SA9RoaLosz7z8ngaQhlfV6oRz?usp=sharing) and place pre-trained traffic model weights in this directory.
+[Download](https://www.dropbox.com/scl/fo/ajge853wnwgtrrxysuwim/APUPJ8UTs8mxGGNp0SHN0aw?rlkey=zfzkycbf7h1dx0a6mcj4etl1e&st=pk1tis1d&dl=0) and place pre-trained traffic model weights in this directory.
